@@ -488,11 +488,11 @@ function handView(id) {
       <p class="eyebrow">Share</p>
       <h2>Not “I gave”. “I hold the line.”</h2>
       <div class="share-grid">
-        <div><canvas id="share-preview" class="share-preview" width="1080" height="1350"></canvas></div>
+        <div><img id="share-preview" class="share-preview" width="1080" height="1350" alt="Your share card"></div>
         <div>
           <label class="check" style="margin-bottom:16px"><input type="checkbox" id="show-amount"> Show the amount on my card</label>
           <div class="btn-row"><button class="btn" id="share">Share my hand</button></div>
-          <p class="small" style="margin-top:12px">The card carries your certificate, so anyone can check it against the public ledger.</p>
+          <p class="small" style="margin-top:12px">You can also save the card by right-clicking or long-pressing it. It carries your certificate, so anyone can check it against the public ledger.</p>
         </div>
       </div>
     </section>`
@@ -504,18 +504,16 @@ function handView(id) {
     let card;
     const draw = async () => {
       card = await renderShareCard({ donation: d, cause: c, pillar: p, edition: EDITION, totals, showAmount: $('#show-amount').checked });
-      const prev = $('#share-preview');
-      prev.getContext('2d').drawImage(card, 0, 0);
+      $('#share-preview').src = card.toDataURL('image/png');
     };
     draw();
     $('#show-amount').addEventListener('change', draw);
     $('#share').addEventListener('click', async () => {
-      const r = await shareOrDownload(
+      await shareOrDownload(
         card,
         `ligne-de-vie-${String(d.handNo).padStart(4, '0')}.png`,
         `Je tiens la ligne. ${handLabel(d.handNo)}, ${EDITION.artwork.title} d’après ${EDITION.artist.name}.`,
       );
-      if (r === 'downloaded') toast('Your card was saved');
     });
   }
 }

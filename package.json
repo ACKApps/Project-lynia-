@@ -1,0 +1,14 @@
+{
+  "name": "lynia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The art of giving: every donation becomes a hand in a living artwork, and every euro is traced.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

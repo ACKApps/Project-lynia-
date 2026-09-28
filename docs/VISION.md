@@ -24,8 +24,6 @@ Every donation is represented by a piece of art, and every piece of art is a han
 
 ## 3. Why *Ligne de Vie*, and why Miryan Klein
 
-**About the name:** the brief says "Myriam Klein". Every public source spells it **Miryan Klein**, including her own website (miryanklein.com). The prototype uses *Miryan*, and it is set in one place only (`app/js/data/edition.js`). Please confirm the spelling with her.
-
 What public sources say:
 
 - **The artist.** Born in Lyon on 5 August 1951. Self-taught, she was drawn to drawing, painting and classical dance before turning to figurative painting and sculpture. She works with "poor" and very contemporary materials, above all **neon** and **fibre optics**. In her "no painting" works, **light replaces pigment**. She lives and works in Nice (a studio at Mont-Boron, previously at the Régina in Cimiez) and in Normandy. Since 2001 she has shown internationally, including at the Armory Show in New York. Her work sets a need to bear witness to the absurdities of our society alongside a stubborn optimism: she refuses to accept the drifts of the system as fate.
@@ -155,7 +153,7 @@ Start with **5–8 causes** for the pilot edition. Add causes only when the evid
 
 ## 12. Open questions for you
 
-1. Is it **Miryan** or **Myriam**? And what is your relationship to the artist: is she already on board?
+1. Is Miryan Klein already on board, and who will lead the conversation about the licence?
 2. Which **causes and partners** do you already have in mind for the pilot?
 3. **Legal home:** create a new association or endowment fund, or partner with an existing foundation?
 4. Should the platform keep a **share** (5% in the prototype), or be funded separately, by sponsors or by the artist's edition?
